@@ -5,7 +5,14 @@ description = "Add your description here"
 authors = [
     { name = "jcfangc", email = "workinging.fang@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "paddleocr>=2.10.0",
+    "pymupdf>=1.25.5",
+    "aiofile>=3.9.0",
+    "pydantic>=2.11.2",
+    "scikit-learn>=1.6.1",
+    "loguru>=0.7.3",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -24,3 +31,11 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/my_book_ocr"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "semver"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true

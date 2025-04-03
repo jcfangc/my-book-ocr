@@ -8,3 +8,10 @@ wheels/
 
 # venv
 .venv
+
+# logs
+*.log
+
+# 本地输入输出
+input/
+output/
