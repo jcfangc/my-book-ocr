@@ -19,11 +19,17 @@ albumentations==2.0.5
     # via paddleocr
 annotated-types==0.7.0
     # via pydantic
+anyio==4.9.0
+    # via httpx
+astor==0.8.1
+    # via paddlepaddle
 beautifulsoup4==4.13.3
     # via paddleocr
 caio==0.9.21
     # via aiofile
 certifi==2025.1.31
+    # via httpcore
+    # via httpx
     # via requests
 charset-normalizer==3.4.1
     # via requests
@@ -32,11 +38,21 @@ colorama==0.4.6
     # via tqdm
 cython==3.0.12
     # via paddleocr
+decorator==5.2.1
+    # via paddlepaddle
 fire==0.7.0
     # via paddleocr
 fonttools==4.57.0
     # via paddleocr
+h11==0.14.0
+    # via httpcore
+httpcore==1.0.7
+    # via httpx
+httpx==0.28.1
+    # via paddlepaddle
 idna==3.10
+    # via anyio
+    # via httpx
     # via requests
 imageio==2.37.0
     # via scikit-image
@@ -51,6 +67,7 @@ loguru==0.7.3
 lxml==5.3.1
     # via python-docx
 networkx==3.4.2
+    # via paddlepaddle
     # via scikit-image
 numpy==2.2.4
     # via albucore
@@ -59,7 +76,9 @@ numpy==2.2.4
     # via opencv-contrib-python
     # via opencv-python
     # via opencv-python-headless
+    # via opt-einsum
     # via paddleocr
+    # via paddlepaddle
     # via scikit-image
     # via scikit-learn
     # via scipy
@@ -72,15 +91,22 @@ opencv-python==4.11.0.86
 opencv-python-headless==4.11.0.86
     # via albucore
     # via albumentations
+opt-einsum==3.3.0
+    # via paddlepaddle
 packaging==24.2
     # via lazy-loader
     # via scikit-image
 paddleocr==2.10.0
     # via my-book-ocr
+paddlepaddle==3.0.0
+    # via my-book-ocr
 pillow==11.1.0
     # via imageio
     # via paddleocr
+    # via paddlepaddle
     # via scikit-image
+protobuf==6.30.2
+    # via paddlepaddle
 pyclipper==1.3.0.post6
     # via paddleocr
 pydantic==2.11.2
@@ -107,10 +133,14 @@ scipy==1.15.2
     # via albumentations
     # via scikit-image
     # via scikit-learn
+setuptools==78.1.0
+    # via my-book-ocr
 shapely==2.1.0
     # via paddleocr
 simsimd==6.2.1
     # via albucore
+sniffio==1.3.1
+    # via anyio
 soupsieve==2.6
     # via beautifulsoup4
 stringzilla==3.12.3
@@ -124,7 +154,9 @@ tifffile==2025.3.30
 tqdm==4.67.1
     # via paddleocr
 typing-extensions==4.13.1
+    # via anyio
     # via beautifulsoup4
+    # via paddlepaddle
     # via pydantic
     # via pydantic-core
     # via python-docx
