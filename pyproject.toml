@@ -6,14 +6,14 @@ authors = [
     { name = "jcfangc", email = "workinging.fang@gmail.com" }
 ]
 dependencies = [
-    "paddleocr>=2.10.0",
     "pymupdf>=1.25.5",
     "aiofile>=3.9.0",
     "pydantic>=2.11.2",
-    "scikit-learn>=1.6.1",
     "loguru>=0.7.3",
-    "paddlepaddle>=3.0.0",
-    "setuptools>=78.1.0",
+    "numpy>=2.2.4",
+    "opencv-python>=4.11.0.86",
+    "openai>=1.70.0",
+    "dotenv>=0.9.9",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"

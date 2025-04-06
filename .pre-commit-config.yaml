@@ -1,7 +1,1 @@
-repos:
-    - hooks:
-          - id: commitizen
-            stages:
-                - pre-push
-      repo: https://github.com/commitizen-tools/commitizen
-      rev: v4.4.1
+repos: []
